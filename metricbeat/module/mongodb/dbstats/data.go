@@ -35,6 +35,14 @@ var schema = s.Schema{
 	"storage_size": s.Object{
 		"bytes": c.Int("storageSize"),
 	},
+	"fs_used_size": s.Object{
+                "bytes": c.Int("fsusedSize"),
+        },
+	"fs_total_size": s.Object{
+                "bytes": c.Int("fstotalSize"),
+        },
+
+
 	"num_extents": c.Int("numExtents"),
 	"indexes":     c.Int("indexes"),
 	"index_size": s.Object{

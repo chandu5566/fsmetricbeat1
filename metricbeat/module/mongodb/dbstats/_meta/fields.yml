@@ -40,6 +40,14 @@
       type: long
       format: bytes
 
+    - name: fs_used_size.bytes
+      type: long
+      format: bytes
+
+    - name: fs_total_size.bytes
+      type: long
+      format: bytes
+
     - name: ns_size_mb.mb
       type: long
 

@@ -64,6 +64,14 @@ func TestFetch(t *testing.T) {
 		assert.NoError(t, err)
 		assert.True(t, storageSize.(int64) > 0)
 
+		fsusedSize, err := metricsetFields.GetValue("fs_used_size.bytes")
+                assert.NoError(t, err)
+                assert.True(t, fsusedSize.(int64) > 0)
+
+		fstotalSize, err := metricsetFields.GetValue("fs_total_size.bytes")
+                assert.NoError(t, err)
+                assert.True(t, fstotalSize.(int64) > 0)
+
 		numExtents := metricsetFields["num_extents"].(int64)
 		assert.True(t, numExtents >= 0)
 
