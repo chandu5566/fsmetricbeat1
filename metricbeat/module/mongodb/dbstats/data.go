@@ -36,10 +36,10 @@ var schema = s.Schema{
 		"bytes": c.Int("storageSize"),
 	},
 	"fs_used_size": s.Object{
-                "bytes": c.Int("fsusedSize"),
+                "bytes": c.Int("fsUsedSize"),
         },
 	"fs_total_size": s.Object{
-                "bytes": c.Int("fstotalSize"),
+                "bytes": c.Int("fsTotalSize"),
         },
 
 

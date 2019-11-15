@@ -32,13 +32,13 @@
             "objects": 2,
             "storage_size": {
                 "bytes": 32768
-	    },
-	    "fs_used_size": {
+			},
+			"fs_used_size": {
                 "bytes": 32768
             },
-	    "fs_total_size": {
+			"fs_total_size": {
                 "bytes": 32768
-            }
+			}
         }
     },
     "service": {
